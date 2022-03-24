@@ -23,6 +23,12 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+const smoothieMachine = (...ingredients) => {
+  return (...more) => {
+    ingredients = ingredients.concat(more)
+    return ("I'm having a smoothie with " + ingredients.join(" and "));
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
